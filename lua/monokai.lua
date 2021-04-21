@@ -74,7 +74,7 @@ function monokai.load_syntax()
     local syntax = {
         Normal = {
             fg = monokai.fg,
-            bg = monokai.bg
+            bg = monokai.none
         },
         Cursor = {
             fg = monokai.none,
