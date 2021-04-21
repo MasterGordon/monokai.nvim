@@ -107,7 +107,8 @@ function monokai.load_syntax()
             bg = monokai.yellow
         },
         CursorLineNr = {
-            fg = monokai.orange
+            fg = monokai.orange,
+            bg = monokai.bg
         },
         MatchParen = {
             fg = monokai.pink,
@@ -141,7 +142,8 @@ function monokai.load_syntax()
             bg = monokai.bg
         },
         LineNr = {
-            fg = monokai.base4
+            fg = monokai.base4,
+            bg = monokai.bg
         },
         SignColumn = {
             fg = monokai.fg,
@@ -149,12 +151,12 @@ function monokai.load_syntax()
         },
         StatusLine = {
             fg = monokai.base8,
-            bg = monokai.base2,
+            bg = monokai.bg,
             style = monokai.none
         },
         StatusLineNC = {
             fg = monokai.grey,
-            bg = monokai.base2,
+            bg = monokai.bg,
             style = monokai.none
         },
         Tabline = {
