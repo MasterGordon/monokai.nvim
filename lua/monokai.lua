@@ -493,6 +493,18 @@ function monokai.load_plugin_syntax()
         },
         TelescopePromptBorder = {
             fg = monokai.aqua
+        },
+        SignifySignAdd = {
+            fg = monokai.green,
+            bg = monokai.bg
+        },
+        SignifySignDelete = {
+            fg = monokai.red,
+            bg = monokai.bg
+        },
+        SignifySignChange = {
+            fg = monokai.purple,
+            bg = monokai.bg
         }
     }
     return plugin_syntax
