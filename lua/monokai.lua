@@ -73,7 +73,7 @@ end
 M.load_syntax = function(palette)
   return {
     Normal = {
-      fg = palette.fg,
+      fg = palette.white,
       bg = palette.none
     },
     NormalFloat = {
@@ -132,7 +132,7 @@ M.load_syntax = function(palette)
     },
     CursorLineNr = {
       fg = palette.orange,
-      bg = palette.bg
+      bg = palette.base3
     },
     MatchParen = {
       fg = palette.pink,
@@ -166,7 +166,7 @@ M.load_syntax = function(palette)
     },
     LineNr = {
       fg = palette.base4,
-      bg = palette.bg
+      bg = palette.base3
     },
     SignColumn = {
       fg = palette.white,
@@ -174,12 +174,12 @@ M.load_syntax = function(palette)
     },
     StatusLine = {
       fg = palette.base8,
-      bg = palette.bg,
+      bg = palette.base3,
       style = palette.none
     },
     StatusLineNC = {
       fg = palette.grey,
-      bg = palette.bg,
+      bg = palette.base3,
       style = palette.none
     },
     Tabline = {
@@ -601,15 +601,15 @@ M.load_plugin_syntax = function(palette)
     },
     SignifySignAdd = {
       fg = palette.green,
-      bg = palette.bg
+      bg = palette.base3
     },
     SignifySignDelete = {
       fg = palette.red,
-      bg = palette.bg
+      bg = palette.base3
     },
     SignifySignChange = {
       fg = palette.purple,
-      bg = palette.bg
+      bg = palette.base3
     }
   }
 end
