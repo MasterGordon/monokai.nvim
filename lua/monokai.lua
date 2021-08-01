@@ -601,15 +601,15 @@ M.load_plugin_syntax = function(palette)
     },
     SignifySignAdd = {
       fg = palette.green,
-      bg = palette.base3
+      bg = palette.base2
     },
     SignifySignDelete = {
       fg = palette.red,
-      bg = palette.base3
+      bg = palette.base2
     },
     SignifySignChange = {
       fg = palette.purple,
-      bg = palette.base3
+      bg = palette.base2
     }
   }
 end
