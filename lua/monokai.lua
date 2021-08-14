@@ -23,11 +23,11 @@ M.classic = {
   orange = "#fd971f",
   purple = "#ae81ff",
   red = "#e95678",
-  diff_add_fg = "#6a8f1f",
+  diff_add_fg = "#f8f8f0",
   diff_add_bg = "#3d5213",
-  diff_remove_fg = "#4a0f23",
+  diff_remove_fg = "#f8f8f0",
   diff_remove_bg = "#a3214c",
-  diff_change_fg = "#7AA6DA",
+  diff_change_fg = "#f8f8f0",
   diff_change_bg = "#537196",
   none = "NONE"
 }
