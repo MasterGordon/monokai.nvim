@@ -515,7 +515,7 @@ M.load_plugin_syntax = function(palette)
     },
     TSConstructor = {
       fg = palette.green
-    }
+    },
     TSTagAttribute = {
       fg = palette.aqua
     },
