@@ -513,8 +513,11 @@ M.load_plugin_syntax = function(palette)
     TSTagDelimiter = {
       fg = palette.white
     },
-    TSTagAttribute = {
+    TSConstructor = {
       fg = palette.green
+    }
+    TSTagAttribute = {
+      fg = palette.aqua
     },
     TSLabel = {
       fg = palette.pink
