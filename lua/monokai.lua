@@ -602,15 +602,15 @@ M.load_plugin_syntax = function(palette)
     TelescopePromptBorder = {
       fg = palette.aqua
     },
-    SignifySignAdd = {
+    GitSignsAdd = {
       fg = palette.green,
       bg = palette.base2
     },
-    SignifySignDelete = {
+    GitSignsDelete = {
       fg = palette.red,
       bg = palette.base2
     },
-    SignifySignChange = {
+    GitSignsChange = {
       fg = palette.purple,
       bg = palette.base2
     }
