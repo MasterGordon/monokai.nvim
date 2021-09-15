@@ -538,16 +538,20 @@ M.load_plugin_syntax = function(palette)
       fg = palette.white
     },
     LspDiagnosticsSignError = {
-      fg = palette.red
+      fg = palette.red,
+      bg = palette.base2
     },
     LspDiagnosticsSignWarning = {
-      fg = palette.yellow
+      fg = palette.yellow,
+      bg = palette.base2
     },
     LspDiagnosticsSignInformation = {
-      fg = palette.white
+      fg = palette.white,
+      bg = palette.base2
     },
     LspDiagnosticsSignHint = {
-      fg = palette.aqua
+      fg = palette.aqua,
+      bg = palette.base2
     },
     LspDiagnosticsVirtualTextError = {
       fg = palette.red
