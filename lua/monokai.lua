@@ -23,13 +23,10 @@ M.classic = {
   orange = "#fd971f",
   purple = "#ae81ff",
   red = "#e95678",
-  diff_add_fg = "#f8f8f0",
-  diff_add_bg = "#3d5213",
-  diff_remove_fg = "#f8f8f0",
-  diff_remove_bg = "#a3214c",
-  diff_change_fg = "#f8f8f0",
-  diff_change_bg = "#537196",
-  none = "NONE"
+  diff_add = "#3d5213",
+  diff_remove = "#4a0f23",
+  diff_change = "#27406b",
+  diff_text = "#23324d"
 }
 
 M.pro = {
@@ -53,13 +50,37 @@ M.pro = {
   orange = "#FC9867",
   purple = "#AB9DF2",
   red = "#FD6883",
-  diff_add_fg = "#6A8F1F",
-  diff_add_bg = "#3D5213",
-  diff_remove_fg = "#4A0F23",
-  diff_remove_bg = "#A3214C",
-  diff_change_fg = "#7AA6DA",
-  diff_change_bg = "#537196",
-  none = "NONE"
+  diff_add = "#3d5213",
+  diff_remove = "#4a0f23",
+  diff_change = "#27406b",
+  diff_text = "#23324d"
+}
+
+M.soda = {
+  name = "monokai_soda",
+  base1 = "#211F22",
+  base2 = "#26292C",
+  base3 = "#2E323C",
+  base4 = "#333842",
+  base5 = "#4d5154",
+  base6 = "#72696A",
+  base7 = "#B1B1B1",
+  border = "#A1B5B1",
+  brown = "#504945",
+  white = "#f6f6ec",
+  grey = "#72696A",
+  black = "#000000",
+  pink = "#f3005f",
+  green = "#97e023",
+  aqua = "#78DCE8",
+  yellow = " #dfd561",
+  orange = "#fa8419",
+  purple = "#9c64fe",
+  red = "#f3005f",
+  diff_add = "#3d5213",
+  diff_remove = "#4a0f23",
+  diff_change = "#27406b",
+  diff_text = "#23324d"
 }
 
 M.highlight = function(group, color)
@@ -74,10 +95,9 @@ M.load_syntax = function(palette)
   return {
     Normal = {
       fg = palette.white,
-      bg = palette.none
+      bg = palette.base2
     },
     NormalFloat = {
-      fg = palette.none,
       bg = palette.base1
     },
     Pmenu = {
@@ -97,20 +117,15 @@ M.load_syntax = function(palette)
       bg = palette.green
     },
     PmenuSbar = {
-      fg = palette.none,
       bg = palette.base3
     },
     Cursor = {
-      fg = palette.none,
-      bg = palette.none,
       style = "reverse"
     },
     ColorColumn = {
-      fg = palette.none,
       bg = palette.base3
     },
     CursorLine = {
-      fg = palette.none,
       bg = palette.base3
     },
     NonText = {
@@ -135,30 +150,25 @@ M.load_syntax = function(palette)
       bg = palette.base2
     },
     MatchParen = {
-      fg = palette.pink,
-      bg = palette.none
+      fg = palette.pink
     },
     Question = {
       fg = palette.yellow
     },
     ModeMsg = {
       fg = palette.white,
-      bg = palette.none,
       style = "bold"
     },
     MoreMsg = {
       fg = palette.white,
-      bg = palette.none,
       style = "bold"
     },
     ErrorMsg = {
       fg = palette.red,
-      bg = palette.none,
       style = "bold"
     },
     WarningMsg = {
       fg = palette.yellow,
-      bg = palette.none,
       style = "bold"
     },
     VertSplit = {
@@ -173,42 +183,32 @@ M.load_syntax = function(palette)
       bg = palette.base2
     },
     StatusLine = {
-      fg = palette.base8,
-      bg = palette.base3,
-      style = palette.none
+      fg = palette.base7,
+      bg = palette.base3
     },
     StatusLineNC = {
       fg = palette.grey,
-      bg = palette.base3,
-      style = palette.none
+      bg = palette.base3
     },
-    Tabline = {
-      style = palette.none
-    },
-    TabLineFill = {
-      style = palette.none
-    },
+    Tabline = {},
+    TabLineFill = {},
     TabLineSel = {
       bg = palette.base4
     },
     SpellBad = {
       fg = palette.red,
-      bg = palette.none,
       style = "undercurl"
     },
     SpellCap = {
       fg = palette.purple,
-      bg = palette.none,
       style = "undercurl"
     },
     SpellRare = {
       fg = palette.aqua,
-      bg = palette.none,
       style = "undercurl"
     },
     SpellLocal = {
       fg = palette.pink,
-      bg = palette.none,
       style = "undercurl"
     },
     SpecialKey = {
@@ -219,24 +219,19 @@ M.load_syntax = function(palette)
       style = "bold"
     },
     Directory = {
-      fg = palette.aqua,
-      bg = palette.none
+      fg = palette.aqua
     },
     DiffAdd = {
-      fg = palette.diff_add_fg,
-      bg = palette.diff_add_bg
+      bg = palette.diff_add
     },
     DiffDelete = {
-      fg = palette.diff_remove_fg,
-      bg = palette.diff_remove_bg
+      bg = palette.diff_remove
     },
     DiffChange = {
-      fg = palette.diff_change_fg,
-      bg = palette.diff_change_bg
+      bg = palette.diff_change
     },
     DiffText = {
-      fg = palette.black,
-      bg = palette.aqua
+      bg = palette.diff_text
     },
     diffAdded = {
       fg = palette.green
@@ -286,7 +281,8 @@ M.load_syntax = function(palette)
       fg = palette.white
     },
     Function = {
-      fg = palette.green
+      fg = palette.green,
+      style = "italic"
     },
     Statement = {
       fg = palette.pink
@@ -298,7 +294,8 @@ M.load_syntax = function(palette)
       fg = palette.pink
     },
     Keyword = {
-      fg = palette.pink
+      fg = palette.pink,
+      style = "italic"
     },
     PreProc = {
       fg = palette.green
@@ -325,7 +322,8 @@ M.load_syntax = function(palette)
       fg = palette.white
     },
     SpecialComment = {
-      fg = palette.grey
+      fg = palette.grey,
+      style = "italic"
     },
     Tag = {
       fg = palette.orange
@@ -334,15 +332,13 @@ M.load_syntax = function(palette)
       fg = palette.orange
     },
     Comment = {
-      fg = palette.base6
+      fg = palette.base6,
+      style = "italic"
     },
     Underlined = {
-      fg = palette.none,
       style = "underline"
     },
-    Ignore = {
-      fg = palette.none
-    },
+    Ignore = {},
     Error = {
       fg = palette.red
     },
@@ -351,35 +347,24 @@ M.load_syntax = function(palette)
       bg = palette.base2
     },
     EndOfBuffer = {
-      fg = palette.base2,
-      bg = palette.none
+      fg = palette.base2
     },
     Conceal = {
-      fg = palette.grey,
-      bg = palette.none
+      fg = palette.grey
     },
     vCursor = {
-      fg = palette.none,
-      bg = palette.none,
       style = "reverse"
     },
     iCursor = {
-      fg = palette.none,
-      bg = palette.none,
       style = "reverse"
     },
     lCursor = {
-      fg = palette.none,
-      bg = palette.none,
       style = "reverse"
     },
     CursorIM = {
-      fg = palette.none,
-      bg = palette.none,
       style = "reverse"
     },
     CursorColumn = {
-      fg = palette.none,
       bg = palette.base3
     },
     Whitespace = {
@@ -430,7 +415,8 @@ M.load_plugin_syntax = function(palette)
       fg = palette.green
     },
     TSComment = {
-      fg = palette.base6
+      fg = palette.base6,
+      style = "italic"
     },
     TSConstant = {
       fg = palette.aqua
@@ -448,19 +434,23 @@ M.load_plugin_syntax = function(palette)
       fg = palette.yellow
     },
     TSFunction = {
-      fg = palette.green
+      fg = palette.green,
+      style = "italic"
     },
     TSFuncBuiltin = {
       fg = palette.aqua
     },
     TSFuncMacro = {
-      fg = palette.green
+      fg = palette.green,
+      style = "italic"
     },
     TSKeyword = {
-      fg = palette.pink
+      fg = palette.pink,
+      style = "italic"
     },
     TSKeywordFunction = {
-      fg = palette.pink
+      fg = palette.pink,
+      style = "italic"
     },
     TSKeywordOperator = {
       fg = palette.pink
@@ -513,11 +503,8 @@ M.load_plugin_syntax = function(palette)
     TSTagDelimiter = {
       fg = palette.white
     },
-    TSConstructor = {
-      fg = palette.green
-    },
     TSTagAttribute = {
-      fg = palette.aqua
+      fg = palette.green
     },
     TSLabel = {
       fg = palette.pink
@@ -537,47 +524,43 @@ M.load_plugin_syntax = function(palette)
     dbui_tables = {
       fg = palette.white
     },
-    LspDiagnosticsSignError = {
-      fg = palette.red,
-      bg = palette.base2
-    },
-    LspDiagnosticsSignWarning = {
-      fg = palette.yellow,
-      bg = palette.base2
-    },
-    LspDiagnosticsSignInformation = {
-      fg = palette.white,
-      bg = palette.base2
-    },
-    LspDiagnosticsSignHint = {
-      fg = palette.aqua,
-      bg = palette.base2
-    },
-    LspDiagnosticsVirtualTextError = {
+    DiagnosticSignError = {
       fg = palette.red
     },
-    LspDiagnosticsVirtualTextWarning = {
+    DiagnosticSignWarn = {
       fg = palette.yellow
     },
-    LspDiagnosticsVirtualTextInformation = {
+    DiagnosticSignInfo = {
       fg = palette.white
     },
-    LspDiagnosticsVirtualTextHint = {
+    DiagnosticSignHint = {
       fg = palette.aqua
     },
-    LspDiagnosticsUnderlineError = {
+    DiagnosticVirtualTextError = {
+      fg = palette.red
+    },
+    DiagnosticVirtualTextWarn = {
+      fg = palette.yellow
+    },
+    DiagnosticVirtualTextInfo = {
+      fg = palette.white
+    },
+    DiagnosticVirtualTextHint = {
+      fg = palette.aqua
+    },
+    DiagnosticUnderlineError = {
       style = "undercurl",
       sp = palette.red
     },
-    LspDiagnosticsUnderlineWarning = {
+    DiagnosticUnderlineWarn = {
       style = "undercurl",
       sp = palette.yellow
     },
-    LspDiagnosticsUnderlineInformation = {
+    DiagnosticUnderlineInfo = {
       style = "undercurl",
       sp = palette.white
     },
-    LspDiagnosticsUnderlineHint = {
+    DiagnosticUnderlineHint = {
       style = "undercurl",
       sp = palette.aqua
     },
@@ -597,40 +580,35 @@ M.load_plugin_syntax = function(palette)
     },
     NvimTreeSpecialFile = {
       fg = palette.white,
-      bg = palette.none,
       style = "NONE"
     },
     TelescopeBorder = {
       fg = palette.border
     },
     TelescopePromptBorder = {
-      fg = palette.aqua
-    },
-    GitSignsAdd = {
-      fg = palette.green,
-      bg = palette.base2
-    },
-    GitSignsDelete = {
-      fg = palette.red,
-      bg = palette.base2
-    },
-    GitSignsChange = {
-      fg = palette.purple,
-      bg = palette.base2
+      fg = palette.border
     }
   }
 end
 
-M.setup = function(palette)
-  vim.cmd("hi clear")
-  if vim.fn.exists("syntax_on") then
-    vim.cmd("syntax reset")
+local default_config = {
+  palette = M.classic,
+  custom_hlgroups = {}
+}
+
+M.setup = function(config)
+  vim.cmd "hi clear"
+  if vim.fn.exists "syntax_on" then
+    vim.cmd "syntax reset"
   end
   vim.o.background = "dark"
   vim.o.termguicolors = true
-  local used_palette = palette or M.classic
+  config = config or {}
+  config = vim.tbl_deep_extend("keep", config, default_config)
+  local used_palette = config.palette or M.classic
   vim.g.colors_name = used_palette.name
   local syntax = M.load_syntax(used_palette)
+  syntax = vim.tbl_deep_extend("keep", config.custom_hlgroups, syntax)
   for group, colors in pairs(syntax) do
     M.highlight(group, colors)
   end
@@ -640,6 +618,7 @@ M.setup = function(palette)
     vim.schedule_wrap(
       function()
         local plugin_syntax = M.load_plugin_syntax(used_palette)
+        plugin_syntax = vim.tbl_deep_extend("keep", config.custom_hlgroups, plugin_syntax)
         for group, colors in pairs(plugin_syntax) do
           M.highlight(group, colors)
         end
