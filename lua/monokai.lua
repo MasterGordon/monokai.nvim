@@ -95,7 +95,7 @@ M.load_syntax = function(palette)
   return {
     Normal = {
       fg = palette.white,
-      bg = palette.base2
+      bg = palette.none
     },
     NormalFloat = {
       bg = palette.base1
@@ -222,13 +222,16 @@ M.load_syntax = function(palette)
       fg = palette.aqua
     },
     DiffAdd = {
-      bg = palette.diff_add
+      bg = palette.diff_add,
+      fg = palette.white
     },
     DiffDelete = {
-      bg = palette.diff_remove
+      bg = palette.diff_remove,
+      fg = palette.white
     },
     DiffChange = {
-      bg = palette.diff_change
+      bg = palette.diff_change,
+      fg = palette.white
     },
     DiffText = {
       bg = palette.diff_text
@@ -504,6 +507,9 @@ M.load_plugin_syntax = function(palette)
       fg = palette.white
     },
     TSTagAttribute = {
+      fg = palette.aqua
+    },
+    TSTagConstructor = {
       fg = palette.green
     },
     TSLabel = {
@@ -535,6 +541,18 @@ M.load_plugin_syntax = function(palette)
     },
     DiagnosticSignHint = {
       fg = palette.aqua
+    },
+    GitSignsAdd = {
+      fg = palette.green,
+      bg = palette.base2
+    },
+    GitSignsDelete = {
+      fg = palette.red,
+      bg = palette.base2
+    },
+    GitSignsChange = {
+      fg = palette.purple,
+      bg = palette.base2
     },
     DiagnosticVirtualTextError = {
       fg = palette.red
