@@ -534,16 +534,20 @@ M.load_plugin_syntax = function(palette)
       fg = palette.white
     },
     DiagnosticSignError = {
-      fg = palette.red
+      fg = palette.red,
+      bg = palette.base2
     },
     DiagnosticSignWarn = {
-      fg = palette.yellow
+      fg = palette.yellow,
+      bg = palette.base2
     },
     DiagnosticSignInfo = {
-      fg = palette.white
+      fg = palette.white,
+      bg = palette.base2
     },
     DiagnosticSignHint = {
-      fg = palette.aqua
+      fg = palette.aqua,
+      bg = palette.base2
     },
     GitSignsAdd = {
       fg = palette.green,
