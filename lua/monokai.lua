@@ -623,10 +623,10 @@ M.load_plugin_syntax = function(palette)
       fg = palette.aqua
     },
     CmpItemKindFunction = {
-      fg = palette.pink
+      fg = palette.purple
     },
     CmpItemKindMethod = {
-      fg = palette.pink
+      fg = palette.purple
     }
   }
 end
