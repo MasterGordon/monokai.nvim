@@ -612,6 +612,21 @@ M.load_plugin_syntax = function(palette)
     },
     TelescopePromptBorder = {
       fg = palette.border
+    },
+    CmpItemKindVariable = {
+      fg = palette.aqua
+    },
+    CmpItemKindInterface = {
+      fg = palette.aqua
+    },
+    CmpItemKindText = {
+      fg = palette.aqua
+    },
+    CmpItemKindFunction = {
+      fg = palette.pink
+    },
+    CmpItemKindMethod = {
+      fg = palette.pink
     }
   }
 end
