@@ -619,7 +619,7 @@ M.load_plugin_syntax = function(palette)
     CmpItemKindInterface = {
       fg = palette.aqua
     },
-    CmpItemKindText = {
+    CmpItemKindConstant = {
       fg = palette.aqua
     },
     CmpItemKindFunction = {
