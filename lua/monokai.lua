@@ -666,38 +666,11 @@ M.setup = function(config)
         for group, colors in pairs(plugin_syntax) do
           M.highlight(group, colors)
         end
-        local signError = vim.fn.sign_getdefined("DiagnosticSignError")
-        signError["text"] = ""
-        signError["texthl"] = "DiagnosticSignError"
-        vim.fn.sign_define("DiagnosticSignError", signError)
-        local signWarn = vim.fn.sign_getdefined("DiagnosticSignWarn")
-        signWarn["text"] = ""
-        signWarn["texthl"] = "DiagnosticSignWarn"
-        vim.fn.sign_define("DiagnosticSignWarn", signWarn)
-        local signHint = vim.fn.sign_getdefined("DiagnosticSignHint")
-        signHint["text"] = ""
-        signHint["texthl"] = "DiagnosticSignHint"
-        vim.fn.sign_define("DiagnosticSignHint", signHint)
-        vim.fn.sign_define("DiagnosticSignInfo", signHint)
-
         async_load_plugin:close()
       end
     )
   )
   async_load_plugin:send()
-  local signError = vim.fn.sign_getdefined("DiagnosticSignError")
-  signError["text"] = ""
-  signError["texthl"] = "DiagnosticSignError"
-  vim.fn.sign_define("DiagnosticSignError", signError)
-  local signWarn = vim.fn.sign_getdefined("DiagnosticSignWarn")
-  signWarn["text"] = ""
-  signWarn["texthl"] = "DiagnosticSignWarn"
-  vim.fn.sign_define("DiagnosticSignWarn", signWarn)
-  local signHint = vim.fn.sign_getdefined("DiagnosticSignHint")
-  signHint["text"] = ""
-  signHint["texthl"] = "DiagnosticSignHint"
-  vim.fn.sign_define("DiagnosticSignHint", signHint)
-  vim.fn.sign_define("DiagnosticSignInfo", signHint)
 end
 
 return M
