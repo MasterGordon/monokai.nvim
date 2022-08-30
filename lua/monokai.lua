@@ -191,7 +191,7 @@ M.load_syntax = function(palette)
       bg = palette.base3
     },
     TabLine = {
-      bg = palette.base3
+      bg = palette.base1
     },
     TabLineFill = {},
     TabLineSel = {
