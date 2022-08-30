@@ -190,7 +190,9 @@ M.load_syntax = function(palette)
       fg = palette.grey,
       bg = palette.base3
     },
-    Tabline = {},
+    TabLine = {
+      bg = palette.base3
+    },
     TabLineFill = {},
     TabLineSel = {
       bg = palette.base4
