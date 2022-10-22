@@ -567,6 +567,24 @@ M.load_plugin_syntax = function(palette)
       fg = palette.purple,
       bg = palette.base2
     },
+    NeoTreeGitAdded = {
+      fg = palette.green
+    },
+    NeoTreeGitModified = {
+      fg = palette.purple
+    },
+    NeoTreeGitRenamed = {
+      fg = palette.purple
+    },
+    NeoTreeGitUntracked = {
+      fg = palette.green
+    },
+    NeoTreeGitDeleted = {
+      fg = palette.red
+    },
+    NeoTreeDirectoryName = {
+      fg = palette.white
+    },
     DiagnosticVirtualTextError = {
       fg = palette.red
     },
