@@ -413,7 +413,7 @@ M.load_plugin_syntax = function(palette)
     variable = {
       fg = palette.white
     },
-    variableBuiltin = {
+    ["variable.builtin"] = {
       fg = palette.orange
     },
     annotation = {
@@ -426,10 +426,10 @@ M.load_plugin_syntax = function(palette)
     constant = {
       fg = palette.aqua
     },
-    constBuiltin = {
+    ["constant.builtin"] = {
       fg = palette.purple
     },
-    constMacro = {
+    ["constant.macro"] = {
       fg = palette.purple
     },
     conditional = {
@@ -438,14 +438,14 @@ M.load_plugin_syntax = function(palette)
     character = {
       fg = palette.yellow
     },
-    function = {
+    ["function"] = {
       fg = palette.green,
       style = "italic"
     },
-    funcBuiltin = {
+    ["function.builtin"] = {
       fg = palette.aqua
     },
-    funcMacro = {
+    ["function.macro"] = {
       fg = palette.green,
       style = "italic"
     },
@@ -453,14 +453,14 @@ M.load_plugin_syntax = function(palette)
       fg = palette.pink,
       style = "italic"
     },
-    keywordFunction = {
+    ["keyword.function"] = {
       fg = palette.pink,
       style = "italic"
     },
-    keywordOperator = {
+    ["keyword.operator"] = {
       fg = palette.pink
     },
-    keywordReturn = {
+    ["keyword.return"] = {
       fg = palette.pink
     },
     method = {
@@ -478,40 +478,40 @@ M.load_plugin_syntax = function(palette)
     parameter = {
       fg = palette.white
     },
-    parameterReference = {
+    ["parameter.reference"] = {
       fg = palette.white
     },
     property = {
       fg = palette.white
     },
-    punctDelimiter = {
+    ["punctuation.delimiter"] = {
       fg = palette.white
     },
-    punctBracket = {
+    ["punctuation.bracket"] = {
       fg = palette.white
     },
-    punctSpecial = {
+    ["punctuation.special"] = {
       fg = palette.pink
     },
     repeat = {
       fg = palette.pink
     },
-    stringRegex = {
+    ["string.regex"] = {
       fg = palette.purple
     },
-    stringEscape = {
+    ["string.escape"] = {
       fg = palette.purple
     },
     tag = {
       fg = palette.pink
     },
-    tagDelimiter = {
+    ["tag.delimiter"] = {
       fg = palette.white
     },
     constructor = {
       fg = palette.green
     },
-    tagAttribute = {
+    ["tag.attribute"] = {
       fg = palette.aqua
     },
     tagConstructor = {
