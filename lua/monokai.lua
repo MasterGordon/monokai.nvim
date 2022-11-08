@@ -493,7 +493,7 @@ M.load_plugin_syntax = function(palette)
     ["punctuation.special"] = {
       fg = palette.pink
     },
-    repeat = {
+    ["repeat"] = {
       fg = palette.pink
     },
     ["string.regex"] = {
