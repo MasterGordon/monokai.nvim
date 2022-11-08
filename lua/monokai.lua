@@ -508,7 +508,7 @@ M.load_plugin_syntax = function(palette)
     ["tag.delimiter"] = {
       fg = palette.white
     },
-    constructor = {
+    ["constructor"] = {
       fg = palette.green
     },
     ["tag.attribute"] = {
