@@ -404,132 +404,132 @@ end
 
 M.load_plugin_syntax = function(palette)
   return {
-    string = {
+    ["@string"] = {
       fg = palette.yellow
     },
-    include = {
+    ["@include"] = {
       fg = palette.pink
     },
-    variable = {
+    ["@variable"] = {
       fg = palette.white
     },
-    ["variable.builtin"] = {
+    ["@variable.builtin"] = {
       fg = palette.orange
     },
-    annotation = {
+    ["@annotation"] = {
       fg = palette.green
     },
-    comment = {
+    ["@comment"] = {
       fg = palette.base6,
       style = "italic"
     },
-    constant = {
+    ["@constant"] = {
       fg = palette.aqua
     },
-    ["constant.builtin"] = {
+    ["@constant.builtin"] = {
       fg = palette.purple
     },
-    ["constant.macro"] = {
+    ["@constant.macro"] = {
       fg = palette.purple
     },
-    conditional = {
+    ["@conditional"] = {
       fg = palette.pink
     },
-    character = {
+    ["@character"] = {
       fg = palette.yellow
     },
-    ["function"] = {
+    ["@function"] = {
       fg = palette.green,
       style = "italic"
     },
-    ["function.builtin"] = {
+    ["@function.builtin"] = {
       fg = palette.aqua
     },
-    ["function.macro"] = {
+    ["@function.macro"] = {
       fg = palette.green,
       style = "italic"
     },
-    keyword = {
+    ["@keyword"] = {
       fg = palette.pink,
       style = "italic"
     },
-    ["keyword.function"] = {
+    ["@keyword.function"] = {
       fg = palette.pink,
       style = "italic"
     },
-    ["keyword.operator"] = {
+    ["@keyword.operator"] = {
       fg = palette.pink
     },
-    ["keyword.return"] = {
+    ["@keyword.return"] = {
       fg = palette.pink
     },
-    method = {
+    ["@method"] = {
       fg = palette.green
     },
-    namespace = {
+    ["@namespace"] = {
       fg = palette.purple
     },
-    number = {
+    ["@number"] = {
       fg = palette.purple
     },
-    operator = {
+    ["@operator"] = {
       fg = palette.pink
     },
-    parameter = {
+    ["@parameter"] = {
       fg = palette.white
     },
-    ["parameter.reference"] = {
+    ["@parameter.reference"] = {
       fg = palette.white
     },
-    property = {
+    ["@property"] = {
       fg = palette.white
     },
-    ["punctuation.delimiter"] = {
+    ["@punctuation.delimiter"] = {
       fg = palette.white
     },
-    ["punctuation.bracket"] = {
+    ["@punctuation.bracket"] = {
       fg = palette.white
     },
-    ["punctuation.special"] = {
+    ["@punctuation.special"] = {
       fg = palette.pink
     },
-    ["repeat"] = {
+    ["@repeat"] = {
       fg = palette.pink
     },
-    ["string.regex"] = {
+    ["@string.regex"] = {
       fg = palette.purple
     },
-    ["string.escape"] = {
+    ["@string.escape"] = {
       fg = palette.purple
     },
-    tag = {
+    ["@tag"] = {
       fg = palette.pink
     },
-    ["tag.delimiter"] = {
+    ["@tag.delimiter"] = {
       fg = palette.white
     },
-    ["constructor"] = {
+    ["@constructor"] = {
       fg = palette.green
     },
-    ["tag.attribute"] = {
+    ["@tag.attribute"] = {
       fg = palette.aqua
     },
-    tagConstructor = {
+    ["@tag.constructor"] = {
       fg = palette.green
     },
-    label = {
+    ["@label"] = {
       fg = palette.pink
     },
-    type = {
+    ["@type"] = {
       fg = palette.aqua
     },
-    exception = {
+    ["@exception"] = {
       fg = palette.pink
     },
-    field = {
+    ["@field"] = {
       fg = palette.white
     },
-    float = {
+    ["@float"] = {
       fg = palette.purple
     },
     dbui_tables = {
